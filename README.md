@@ -1,3 +1,2 @@
 # VlkoTomas
-negr
 Ahoj Vaso
