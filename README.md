@@ -1,4 +1,0 @@
-# VlkoTomas
-Ahoj Vaso
-ticho
-
