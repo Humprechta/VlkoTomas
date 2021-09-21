@@ -1,2 +1,3 @@
 # VlkoTomas
 negr
+Ahoj Vaso
