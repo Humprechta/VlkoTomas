@@ -1,0 +1,9 @@
+nahrani + pripojeni
+git clone adresa
+(ls) pote vzbrat (cd jmenoprojektu)
+git add .               ;pridavam adresar
+git commit -m "popis"   ;pridavs verzi
+git push		;natlacim na server
+---
+git pull
+
