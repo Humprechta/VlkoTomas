@@ -53,7 +53,7 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -68,7 +68,7 @@ html {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -136,9 +136,13 @@ html {
 <div class="row">
   <div class="col-3 col-s-3 menu">
     <ul>
-      <li><a href ="coop1.mp4">Video 1</a></li>
-      <li><a href ="coop2.mp4">Video 2</a></li>
-      <li><a href ="coop3.mp4">Video 3</a></li>
+      <figcaption>
+        <ul>
+          <li><a href ="coop1.mp4">Video 1</a></li>
+          <li><a href ="coop2.mp4">Video 2</a></li>
+          <li><a href ="coop3.mp4">Video 3</a></li>
+        </ul>
+      </figcaption>
       <li>Text4</li>
       <li>Text5</li>
       <li>Text6</li>
@@ -156,16 +160,7 @@ html {
         <source src="coop1.mp4" type="video/mp4">
         <source src="coop1.mp4" type="video/webm">
       </video>
-      <figcaption>
-        <div class="row">
-         <div class="col-3 col-s-3 menu">
-        <ul>
-          <li><a href ="coop1.mp4">Video 1</a></li>
-          <li><a href ="coop2.mp4">Video 2</a></li>
-          <li><a href ="coop3.mp4">Video 3</a></li>
-        </ul>
-      </div>
-      </figcaption>
+      
     </figure>
   </div>
 
