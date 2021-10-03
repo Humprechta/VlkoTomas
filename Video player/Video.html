@@ -210,7 +210,7 @@ function VideoChange() {
 
     var count=1;
     var player=document.getElementById('Video_end');
-    player.addEventListener('ended',myHandler,false);
+    player.addEventListener('ended',myHandler,true);
 
     function myHandler(e) {
         if(!e) 
