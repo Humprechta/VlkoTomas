@@ -137,18 +137,17 @@ html {
   <div class="col-3 col-s-3 menu">
     <ul>
       <figcaption>
+	  <figure id="video_player">
         <ul>
           <li><a href ="coop1.mp4">Video 1</a></li>
           <li><a href ="coop2.mp4">Video 2</a></li>
-          <li><a href ="coop3.mp4">Video 3</a></li>
+          <li><a href ="coop3.mp4">Video 4</a></li>
+		  <li><a href ="coop4.mp4">Video 5</a></li>
+		  <li><a href ="coop5.mp4">Video 6</a></li>
+		  <li><a href ="coop6.mp4">Video 7</a></li>
         </ul>
+		</figure>
       </figcaption>
-      <li>Text4</li>
-      <li>Text5</li>
-      <li>Text6</li>
-      <li>Text7</li>
-      <li>Text8</li>
-      <li>Text9</li>
     </ul>
   </div>
 
@@ -160,7 +159,6 @@ html {
         <source src="coop1.mp4" type="video/mp4">
         <source src="coop1.mp4" type="video/webm">
       </video>
-      
     </figure>
   </div>
 
@@ -190,6 +188,7 @@ function VideoChange() {
 </body>
 
 <script type="text/javascript">
+
   var video_player=document.getElementById("video_player"),
   links=video_player.getElementsByTagName('a');
   for(var i=0; i<links.length; i++){
