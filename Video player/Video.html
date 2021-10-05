@@ -53,7 +53,7 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -68,7 +68,7 @@ html {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -84,6 +84,10 @@ html {
   .col-12 {width: 100%;}
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
 
 .navigation {
   display: flex;
@@ -121,15 +125,20 @@ html {
   }
 }
 
+a:link {
+  text-decoration: none;
+}
+
+
 </style>
 </head>
 <body>
 
 <div class="header">
   <ul class="navigation">
-  <li><a href="#">odkaz</a></li>
-  <li><a href="#">odkaz2</a></li>
-  <li><a href="#">odkaz3</a></li>
+  <li><a href="#">O nás &#x2606;</a></li>
+  <li><a href="#">Další videa &#x261B</a></li>
+  <li><a href="#">Kontakty &#x260E;</a></li>
 </ul>
 </div>
 
@@ -139,12 +148,12 @@ html {
       <figcaption>
 	  <figure id="video_player">
         <ul>
-          <li><a href ="coop1.mp4">Video 1</a></li>
-          <li><a href ="coop2.mp4">Video 2</a></li>
-          <li><a href ="coop3.mp4">Video 4</a></li>
-		  <li><a href ="coop4.mp4">Video 5</a></li>
-		  <li><a href ="coop5.mp4">Video 6</a></li>
-		  <li><a href ="coop6.mp4">Video 7</a></li>
+          <li><a href ="coop1.mp4">Prasátko pepa 1 díl</a></li>
+          <li><a href ="coop2.mp4">Prasátko pepa 2 díl</a></li>
+          <li><a href ="coop3.mp4">Prasátko pepa 3 díl</a></li>
+		  <li><a href ="coop4.mp4">Prasátko pepa 4 díl</a></li>
+		  <li><a href ="coop5.mp4">Prasátko pepa 5 díl</a></li>
+		  <li><a href ="coop6.mp4">Prasátko pepa 6 díl</a></li>
         </ul>
 		</figure>
       </figcaption>
@@ -155,10 +164,13 @@ html {
 
   <div class="col-6 col-s-9">
     <figure id="video_player">
-      <video controls width="700px" id="Video_end" autoplay>
+	
+      <video controls id="Video_end" autoplay muted>
         <source src="coop1.mp4" type="video/mp4">
         <source src="coop1.mp4" type="video/webm">
+		
       </video>
+	  
     </figure>
   </div>
 
