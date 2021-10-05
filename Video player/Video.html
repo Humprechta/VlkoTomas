@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <style>
 * {
   box-sizing: border-box;
@@ -152,12 +153,16 @@ a:link {
       <figcaption>
 	  <figure id="video_player">
         <ul>
-          <li><a href ="coop1.mp4">Prasátko pepa 1 díl</a></li>
-          <li><a href ="coop2.mp4">Prasátko pepa 2 díl</a></li>
-          <li><a href ="coop3.mp4">Prasátko pepa 3 díl</a></li>
-		  <li><a href ="coop4.mp4">Prasátko pepa 4 díl</a></li>
-		  <li><a href ="coop5.mp4">Prasátko pepa 5 díl</a></li>
-		  <li><a href ="coop6.mp4">Prasátko pepa 6 díl</a></li>
+          <li id = "jedna"><a href ="coop1.mp4" >Prasátko pepa 1 díl</a></li>
+          <li id = "dva"><a href ="coop2.mp4">Prasátko pepa 2 díl</a></li>
+          <li id = "tri"><a href ="coop3.mp4">Prasátko pepa 3 díl</a></li>
+		  <li id = "ctyry"><a href ="coop4.mp4">Prasátko pepa 4 díl</a></li>
+		  <li id = "pet"><a href ="coop5.mp4">Prasátko pepa 5 díl</a></li>
+		  <li id = "sest"><a href ="coop6.mp4">Prasátko pepa 6 díl</a></li>
+		  
+		  <button onclick="w3.hide('#jedna,#dva,#tri,#ctyry,#pet,#sest')">Zabalit</button>
+		  <button onclick="w3.show('#jedna,#dva,#tri,#ctyry,#pet,#sest')">Rozbalit</button>
+		  
         </ul>
 		</figure>
       </figcaption>
