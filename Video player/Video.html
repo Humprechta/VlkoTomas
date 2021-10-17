@@ -3,6 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<link rel="icon" href="Logo.png">
 <style>
 * {
   box-sizing: border-box;
@@ -133,21 +135,53 @@ a:link {
   text-decoration: none;
   color: white;
 }
+#zbalit {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
+#zbalit {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+
+#zbalit:hover  {
+  background-color: #4CAF50;
+  color: white;
+}
 
 </style>
+
+
+
 </head>
 <body>
 
 <div class="header">
+
   <ul class="navigation">
-  <li><a href="#">O nás &#x2606;</a></li>
+  
+   <li  ><a id = "rozbalit" href="#">Rozbalit &#x2193;</a></li>
+  <li ><a href="#">O nás &#x2606;</a></li>
   <li><a href="#">Další videa &#x261B</a></li>
   <li><a href="#">Kontakty &#x260E;</a></li>
+  
 </ul>
 </div>
 
 <div class="row">
+<div id = "tst">
   <div class="col-3 col-s-3 menu">
     <ul>
       <figcaption>
@@ -160,18 +194,43 @@ a:link {
 		  <li id = "pet"><a href ="coop5.mp4">Prasátko pepa 5 díl</a></li>
 		  <li id = "sest"><a href ="coop6.mp4">Prasátko pepa 6 díl</a></li>
 		  
-		  <button onclick="w3.hide('#jedna,#dva,#tri,#ctyry,#pet,#sest')">Zabalit</button>
-		  <button onclick="w3.show('#jedna,#dva,#tri,#ctyry,#pet,#sest')">Rozbalit</button>
+		  <button id = "zbalit" >Zabalit &#x2191;</button>
+		  
 		  
         </ul>
 		</figure>
       </figcaption>
+	  
     </ul>
+	  </div>
   </div>
 
+<script>
+$( document ).ready(function() {
+    $( "#rozbalit" ).hide();
+});
+
+$( "#zbalit" ).click(function() {
+  $( "#rozbalit" ).show();
+});
+$( "#rozbalit" ).click(function() {
+  $( "#rozbalit" ).hide("slow");
+});
+
+$( "#rozbalit" ).click(function() {
+  $( "#jedna,#dva,#tri,#ctyry,#pet,#sest,#zbalit,#tst" ).show("fast");
+});
 
 
-  <div class="col-6 col-s-9">
+$( "#zbalit" ).click(function() {
+  $( "#jedna,#dva,#tri,#ctyry,#pet,#sest,#tst,#zbalit" ).hide("slow" );
+});
+
+
+
+</script>
+
+  <div class="col-9 col-s-9">
     <figure id="video_player">
 	
       <video controls id="Video_end" autoplay muted>
